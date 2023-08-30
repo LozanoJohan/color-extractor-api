@@ -27,9 +27,10 @@ def read_root():
 @app.post("/images/")
 def upload_image(image: ImageInput):
     try:
+        print(image.url)
         response = requests.get(image.url)
         if response.status_code != 200:
-            raise Exception(response.reason)
+            raise Exception(response.raw)
         
         data = process_and_upload_image(image, response)
 
