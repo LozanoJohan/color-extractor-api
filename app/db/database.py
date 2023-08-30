@@ -3,7 +3,7 @@ from firebase_admin import credentials, storage, firestore
 from pathlib import Path
 
 # Ruta absoluta de el archivo con los datos
-json_path = Path(__file__).resolve().parent / 'data' / 'firebase_config.json'
+json_path = Path(__file__).resolve().parent / 'firebase_config.json'
 
 cred = credentials.Certificate(json_path)
 storage_bucket = {
