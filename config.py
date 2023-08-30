@@ -1,0 +1,2 @@
+UPLOAD_DIR = "images"
+MAX_WIDTH = MAX_HEIGHT = 72
