@@ -8,7 +8,7 @@ from app.schemas.image import ImageResponse
 def extract(file_name: str):
     colors = []
 
-    imagen = Image.open(UPLOAD_DIR + '/' + file_name) 
+    imagen = Image.open(UPLOAD_DIR / file_name) 
     width, height = imagen.size
 
     if width > MAX_WIDTH or height > MAX_HEIGHT:
