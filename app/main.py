@@ -4,10 +4,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 import requests
 
-from models.image_model import process_and_upload_image
-from schemas.image import ImageInput
-import color_extractor 
-from config import UPLOAD_DIR
+from app.models.image_model import process_and_upload_image
+from app.schemas.image import ImageInput
+import app.color_extractor 
+from app.config import UPLOAD_DIR
 
 
 
