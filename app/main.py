@@ -29,7 +29,7 @@ def upload_image(image: ImageInput):
     try:
         response = requests.get(image.url)
         if response.status_code != 200:
-            raise Exception("Invalid URL")
+            raise Exception(response.reason)
         
         data = process_and_upload_image(image, response)
 
