@@ -1,12 +1,14 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from config import UPLOAD_DIR
 import os
+import requests
+
 from models.image_model import process_and_upload_image
 from schemas.image import ImageInput
-import color_extractor as color_extractor
-import requests
+import color_extractor 
+from config import UPLOAD_DIR
+
 
 
 app = FastAPI()
