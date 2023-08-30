@@ -3,7 +3,6 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from config import UPLOAD_DIR
 import os
-from fastapi.staticfiles import StaticFiles
 from image_model import process_and_upload_image
 from image import ImageInput
 import color_extractor
