@@ -1,9 +1,9 @@
-from database import db, bucket
+from db.database import db, bucket
 from config import UPLOAD_DIR
-from image import ImageInput
+from schemas.image import ImageInput
 import shutil
 from pathlib import Path
-import color_extractor
+import color_extractor as color_extractor
 
 
 def upload_image_to_db(bucket, file_path):

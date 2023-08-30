@@ -1,6 +1,6 @@
 from PIL import Image
 from config import MAX_WIDTH, MAX_HEIGHT, UPLOAD_DIR
-from image import ImageResponse
+from schemas.image import ImageResponse
 
 
 
