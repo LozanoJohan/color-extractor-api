@@ -6,7 +6,7 @@ import requests
 
 from app.models.image_model import process_and_upload_image
 from app.schemas.image import ImageInput
-import app.color_extractor 
+import app.color_extractor as color_extractor
 from app.config import UPLOAD_DIR
 
 
